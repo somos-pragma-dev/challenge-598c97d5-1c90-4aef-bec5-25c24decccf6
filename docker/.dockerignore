@@ -1,0 +1,4 @@
+# Files to ignore in the Docker build
+*.go
+*.sum
+*.mod

@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  payment-microservice:
+    build:.
+    ports:
+      - "8080:8080"
+    depends_on:
+      - external-service
+
+  external-service:
+    image: external-service:latest
+    ports:
+      - "8080:8080"
